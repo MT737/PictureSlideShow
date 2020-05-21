@@ -52,6 +52,7 @@
             this.Name = "fFullScreen";
             this.Text = "fFullScreen";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.fFullScreen_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.PBFullScreen)).EndInit();
             this.ResumeLayout(false);
 

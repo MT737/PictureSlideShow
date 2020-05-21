@@ -58,7 +58,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(605, 649);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -74,9 +74,9 @@
             this.flowLayoutPanel1.Controls.Add(this.BtnStartSlide);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(83, 622);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(83, 617);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(519, 24);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(519, 29);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // NextFolder
@@ -162,7 +162,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(599, 613);
+            this.pictureBox1.Size = new System.Drawing.Size(599, 608);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -170,7 +170,7 @@
             // 
             // BtnFullScreen
             // 
-            this.BtnFullScreen.Location = new System.Drawing.Point(3, 622);
+            this.BtnFullScreen.Location = new System.Drawing.Point(3, 617);
             this.BtnFullScreen.Name = "BtnFullScreen";
             this.BtnFullScreen.Size = new System.Drawing.Size(74, 23);
             this.BtnFullScreen.TabIndex = 2;

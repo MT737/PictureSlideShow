@@ -31,6 +31,8 @@ namespace PictureSlideShow
         //Computable properties
         private Folder CurrentFolder => folders[currentFolderIndex];            //This is computable so as to always return the current folder object.
         private bool IsFinalFolder => currentFolderIndex + 1 >= folders.Count;  //This is computable so as to always return the current status.      
+      
+        //Initialize the form.
         public Form1()
         {
             InitializeComponent();
@@ -140,7 +142,11 @@ namespace PictureSlideShow
             }
             else if (e.KeyCode == Keys.F4 && e.Control)
             {
-                this.Close();
+               Application.Exit();
+            }
+            else if (e.KeyCode == Keys.F && e.Control)
+            {
+                FSMode();
             }
         }
 
@@ -149,7 +155,7 @@ namespace PictureSlideShow
         /// </summary>
         /// <param name="increment">Integer representation of the skip. 1 progresses the associated index forward 1 place. All other entries result in moving the associated index back 1.</param>
         /// <param name="type">String representation of the type. "file" for file. All other entries result in folder.</param>
-        private void Skip(int increment, string type)
+        public void Skip(int increment, string type)
         {
             if (!(folders.Count == 0)) //Only proceed if folders list is filled.
             {
@@ -187,10 +193,10 @@ namespace PictureSlideShow
         }
 
         //Launch FS.
-        private void FSMode()
+        public void FSMode()
         {
             //Create an instance of the full screen form and feed it the current image.
-            formFS = new fFullScreen();
+            formFS = new fFullScreen(this);
             formFS.Slide = pictureBox1.Image;
             formFS.Show();
         }
